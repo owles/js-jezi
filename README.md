@@ -13,6 +13,10 @@ Just Easy Zoom (JEZI) is a lightweight JavaScript utility designed to enable sim
 
 Incorporate JEZI into your project by including it in your web page. You can do so by directly linking to the script file in an HTML document or by importing it as a module in a JavaScript project.
 
+```
+npm i js-jezi
+```
+
 ### Direct Script Include
 
 ```html
