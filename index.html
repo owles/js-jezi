@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Just Easy Zoom for Images</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+      }
+
+      h1 {
+        margin-bottom: 2rem;
+      }
+
+      .image-container {
+        aspect-ratio: 1/1;
+        position: relative;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Just Easy Zoom for Images</h1>
+    <div
+      class="image-container"
+      data-jezi-src="img/engine_big.png"
+      data-jezi-trigger="click"
+    >
+      <img alt="Space Engine" src="img/engine_small.png" />
+    </div>
+
+    <script src="/src/index.ts" type="module"></script>
+    <script type="module">
+      import { jezi } from "/src/index.ts";
+
+      jezi();
+    </script>
+  </body>
+</html>
